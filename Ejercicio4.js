@@ -11,6 +11,9 @@ for (let i = 1; i <= 5; i++) {
     for (let j = 1; j <= 5; j++) {
         let nota = prompt(`Ingrese la nota ${j}`);
 
+        // Convertimos la nota a número
+        nota = parseFloat(nota);
+
         // Sumamos la nota a la suma total
         suma += nota;
     }

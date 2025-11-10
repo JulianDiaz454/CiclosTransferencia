@@ -11,6 +11,9 @@ while (true) {
     // Se solicita el valor a retirar
     let retiro = prompt("Ingrese el valor a retirar");
 
+    // Convertimos el valor a número
+    retiro = parseFloat(retiro);
+
     // Validamos si hay fondos suficientes
     if (retiro < fondos) {
         fondos -= retiro; // Descontamos el retiro a lo fondos
